@@ -131,6 +131,9 @@ const transferSol = async () => {
     console.log('from.Pubkey address is', from.publicKey);
     console.log('to.Pubkey address is', to.publicKey);
 
+    console.log("Sender. After Transfer: ", await getWalletBalance(from.publicKey));
+    console.log("Receiver. After Transfer: ", await getWalletBalance(to.publicKey));
+
     console.log('Signature is ', signature);
 }
 
